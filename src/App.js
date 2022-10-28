@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Indonesia from "./pages//indonesia/Indonesia";
 import Programming from "./pages/programming/Programming";
 import Covid from "./pages/covid/Covid";
-import Saved from "./pages/Saved";
+import Saved from "./pages/saved/Saved";
 
 function App() {
   return (
