@@ -1,7 +1,7 @@
 const Saved = () => {
   return (
     <div>
-      <h1>Halaman Saved</h1>
+      <h1>Saved News</h1>
     </div>
   );
 };

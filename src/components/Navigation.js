@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../logo.svg";
 import SearchBar from "./SearchBar";
+import articles from "../pages/indonesia/IndonesiaNews";
 
 const Navigation = ({ onSearch }) => {
   return (
@@ -26,7 +27,7 @@ const Navigation = ({ onSearch }) => {
               Saved
             </Nav.Link>
           </Nav>
-          <SearchBar onSearch={onSearch} />
+          <SearchBar placeholder="Search..." data={articles} />
         </Navbar.Collapse>
       </Container>
     </Navbar>
