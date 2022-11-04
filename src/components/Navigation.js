@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
-import { Button, Container, Form, Nav, Navbar } from "react-bootstrap";
+import { Container, Nav, Navbar } from "react-bootstrap";
 import logo from "../logo.svg";
+import SearchBar from "./SearchBar";
 
-const Navigation = () => {
+const Navigation = ({ onSearch }) => {
   return (
     <Navbar bg="dark" variant="dark" expand="lg">
       <Container fluid>
@@ -25,12 +26,7 @@ const Navigation = () => {
               Saved
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control type="search" placeholder="Search..." className="me-3" aria-label="Search" />
-            <Button variant="outline-success" style={{ width: "150px" }}>
-              Cari berita
-            </Button>
-          </Form>
+          <SearchBar onSearch={onSearch} />
         </Navbar.Collapse>
       </Container>
     </Navbar>
